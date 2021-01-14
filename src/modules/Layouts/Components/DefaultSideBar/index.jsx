@@ -173,7 +173,7 @@ const DefaultSideBar = (props) => {
                 defaultSelectedKeys={props.defaultSelectedKeys}
                 defaultOpenKeys={props.defaultOpenKeys}
             >
-                <Menu.Item key={'over-view'}>Components Overview</Menu.Item>
+                <Menu.Item key={'over-view'}>Overview</Menu.Item>
                 {renderMenu(menuDataOptions)}
             </Menu>
         </Sider>

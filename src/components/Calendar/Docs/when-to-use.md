@@ -1,1 +1,0 @@
-Khi bạn muốn chọn một khoảng thời gian để hiện các phần tử theo khoảng thời gian đó, sử dụng component `<Calendar />` để hiện danh sách khoảng thời gian muốn chọn nữa không.

@@ -11,7 +11,7 @@ import {LayoutContext} from 'Modules/Layouts/layoutContext';
 
 // Components
 import PreviewCode from 'Components/PreviewCode/PreviewCode.jsx';
-import ComponentsOverview from 'Components/ComponentsOverview/index.jsx';
+import Overview from 'Components/Overview';
 import ChangeLog from 'Components/ChangeLog/index.jsx';
 
 // Utils
@@ -326,7 +326,7 @@ class Components extends Component {
         try {
             switch (key) {
                 case 'over-view':
-                    return  <ComponentsOverview onClickComponentView={this.props.onClickComponentView} />;
+                    return  <Overview onClickComponentView={this.props.onClickComponentView} />;
                 case 'change-log':
                     return <ChangeLog changeLog={this.state.component.changeLog} />;
                 default:

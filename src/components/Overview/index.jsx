@@ -11,9 +11,9 @@ import {handleError} from 'Src/utils';
 // Context
 import {LayoutContext} from 'Modules/Layouts/layoutContext';
 
-const PATH = 'Components/ComponentsOverview/index.jsx';
+const PATH = 'Components/Overview/index.jsx';
 
-const ComponentsOverview = (props) => {
+const Overview = (props) => {
     // Props
     const properties = useContext(LayoutContext).state.layout;
     const {setComponentSelected} = useContext(LayoutContext);
@@ -85,6 +85,6 @@ const ComponentsOverview = (props) => {
     );
 };
 
-ComponentsOverview.propTypes = {};
+Overview.propTypes = {};
 
-export default ComponentsOverview;
+export default Overview;

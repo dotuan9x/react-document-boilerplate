@@ -16,9 +16,7 @@ module.exports = {
             Src: path.resolve(__dirname, 'src/'),
             Assets: path.resolve(__dirname, 'src/assets/'),
             Components: path.resolve(__dirname, 'src/components/'),
-            Modules: path.resolve(__dirname, 'src/modules/'),
-            Services: paths.appSrc + '/services/',
-            Application: paths.applicationSrc
+            Modules: path.resolve(__dirname, 'src/modules/')
         }
     },
     externals: {

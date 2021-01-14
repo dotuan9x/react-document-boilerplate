@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-import Loadable from 'react-loadable';
 import {Layout} from 'antd';
 
 const {Header, Content, Footer} = Layout;
 
-import {
-    MenuUnfoldOutlined,
-    MenuFoldOutlined, FileDoneOutlined
-} from '@ant-design/icons';
+import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons';
 
 // Components
 import DefaultSideBar from './Components/DefaultSideBar';
