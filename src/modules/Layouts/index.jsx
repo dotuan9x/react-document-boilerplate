@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Layout} from 'antd';
+import {Layout, Menu} from 'antd';
 
 const {Header, Content, Footer} = Layout;
 
@@ -152,7 +152,7 @@ class Layouts extends Component {
 
     render() {
         // Props
-        const {sidebar = {}} = this.props;
+        const {sidebar = {}, headerMenus = []} = this.props;
 
         return (
             <React.Fragment>
@@ -168,12 +168,23 @@ class Layouts extends Component {
                         <Layout className="site-layout">
                             <Header className="site-layout-background" style={{
                                 padding: 0,
+                                display: 'flex',
+                                justifyContent: 'space-between',
                                 boxShadow: '3px 0 10px 0 rgba(8, 73, 93, 0.3)'
                             }}>
                                 {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
                                     className: 'trigger',
                                     onClick: this.toggle
                                 })}
+                                <Menu mode="horizontal" >
+                                    {headerMenus.length ? headerMenus.map(menuItem => {
+                                        return (
+                                            <Menu.Item key={menuItem.key}>
+                                                <a href={menuItem.link}>{menuItem.label}</a>
+                                            </Menu.Item>
+                                        );
+                                    }) : null}
+                                </Menu>
                             </Header>
                             <Content style={{margin: '0 16px'}}>
                                 <DefaultContent component={this.state.component} />
@@ -192,6 +203,9 @@ Layouts.defaultProps = {
         defaultSelectedKeys: ['over-view'],
         defaultOpenKeys: ['components']
     },
+    headerMenus: [
+        {key: 'charts', label: 'Charts', link: 'https://sandbox-adx.ants.vn/docs/charts?version=01131707'}
+    ],
     menus: [
 
     ],
