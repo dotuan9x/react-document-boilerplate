@@ -9,12 +9,9 @@ function resolveApp(relativePath) {
 
 // Config after eject: we're in ./config/
 module.exports = {
-    appBuild: resolveApp('build'),
-    appPublic: resolveApp('public'),
-    appHtml: resolveApp('public/index.html'),
+    appBuildFolder: resolveApp('build'),
     appIndexJs: resolveApp('src/index.js'),
     appBuildJs: resolveApp('src/modules/Layouts/index.jsx'),
-    appPackageJson: resolveApp('package.json'),
     appSrc: resolveApp('src'),
     applicationSrc: resolveApp('../src')
 };

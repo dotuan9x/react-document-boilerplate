@@ -97,7 +97,7 @@ class Layouts extends Component {
             if (key === 'over-view') {
                 selectedComponent = {
                     name: 'over-view',
-                    label: 'Components Overview',
+                    label: 'Overview',
                     description: 'We provides plenty of UI components to enrich your web applications, and we will improve components experience consistently. We also recommand some great Third-Party Libraries additionally.'
                 };
 
